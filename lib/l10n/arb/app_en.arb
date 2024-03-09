@@ -3,5 +3,64 @@
     "counterAppBarTitle": "Counter",
     "@counterAppBarTitle": {
         "description": "Text shown in the AppBar of the Counter Page"
-    }
+    },
+
+    "lbl_1": "1",
+    "lbl_50_off": "50% off \n",
+    "lbl_academics": "Academics",
+    "lbl_che": "Che",
+    "lbl_eng": "Eng",
+    "lbl_filters": "Filters",
+    "lbl_offers": "Offers",
+    "lbl_phy": "Phy",
+    "lbl_rating": "Rating ",
+    "lbl_sort_by": "Sort by",
+    "lbl_upto_2000": "upto ₹2000",
+    "msg_50_off_upto_2000": "50% off \nupto ₹2000",
+    "msg_coaching_centre": "Coaching centre near you",
+    "msg_popular_coaching": "Popular coaching to explore",
+
+    "lbl_home": "Home", "lbl_marketplace": "Marketplace",
+
+    "lbl_3500": "3500",
+    "lbl_cbse_class_10": "CBSE Class 10",
+    "lbl_hi_rajbir": "Hi Rajbir,",
+    "msg_entrance_exams_2024_2025": "Entrance Exams (2024-2025)",
+    "msg_gandhinagar_ahmedabad": "Gandhinagar, Ahmedabad...",
+
+    "msg_popular_exams_2024_2025": "Popular Exams (2024-2025)",
+    "msg_top_institutes_near": "Top institutes near you ",
+    "msg_trending_searches": "Trending Searches ",
+
+    "lbl_9th_class": "9th class",
+    "msg_olympaid_9th_class": "Olympaid (9th class)",
+
+    "msg_indian_coaching": "Indian Coaching center",
+    "msg_indian_coaching2": "Indian Coaching Center",
+
+    "lbl": "·",
+    "lbl_100_rating": "(100+ Rating)",
+    "lbl_3_kms": "3 kms",
+    "lbl_4_5": "4.5",
+    "lbl_all_subjects": "All Subjects",
+    "lbl_bitsat": "BITSAT",
+    "lbl_ca": "CA",
+    "lbl_clat": "CLAT",
+    "lbl_com": "Com",
+    "lbl_flat_50_off": "Flat\n50% off ",
+    "lbl_jee": "JEE",
+    "lbl_kalkaji": "Kalkaji",
+    "lbl_sci": "Sci",
+    "lbl_verified": "Verified",
+    "msg_cbse_9th_class": "CBSE (9th class)",
+    "msg_icse_9th_class": "ICSE (9th class)",
+    "msg_nios_9th_class": "NIOS (9th class)",
+    "msg_search_for_coachings": "Search for Coachings|",
+    "msg_shiska_coaching": "Shiska Coaching Center",
+    "msg_state_board_9th": "State board (9th class)",
+
+    "msg_network_err": "Network Error",
+    "msg_something_went_wrong": "Something Went Wrong!"
+
+
 }
