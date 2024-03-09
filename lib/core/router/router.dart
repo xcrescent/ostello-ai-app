@@ -6,11 +6,10 @@ import 'package:ostello_ai_app/core/router/router.gr.dart';
 class AppRouter extends $AppRouter {
   @override
   late final List<AutoRoute> routes = [
-    // AutoRoute(
-    //   page: CounterRoute.page,
-    //   path: '/',
-    //   initial: true,
-    // ),
+    AutoRoute(
+      page: CounterRoute.page,
+      path: '/counter',
+    ),
     AutoRoute(
       page: NavigationRoute.page,
       path: '/',

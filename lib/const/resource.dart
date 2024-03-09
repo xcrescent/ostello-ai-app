@@ -74,4 +74,6 @@ class R {
   static String imgIconBack = '$imagePath/img_icon_back.svg';
 
   static String imageNotFound = 'assets/images/image_not_found.png';
+
+  static String coins = 'assets/images/coin1.png';
 }

@@ -93,11 +93,24 @@ class EighteenItemWidget extends StatelessWidget {
               children: [
                 Container(
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 9,
-                    vertical: 3,
+                    horizontal: 8,
+                    vertical: 4,
                   ),
-                  decoration: AppDecoration.gradientCyanToBlue.copyWith(
-                    borderRadius: BorderRadiusStyle.circleBorder12,
+                  decoration: BoxDecoration(
+                    color: const Color(0xff164B76),
+                    gradient: const RadialGradient(
+                      center: Alignment(0.5, 0.5),
+                      radius: 0.5,
+                      colors: [
+                        Color(0xff164B76),
+                        Color(0xff3FA0F0),
+                      ],
+                      stops: [
+                        -0.8,
+                        0.8,
+                      ],
+                    ),
+                    borderRadius: BorderRadius.circular(4),
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
@@ -113,7 +126,7 @@ class EighteenItemWidget extends StatelessWidget {
                         ),
                       ),
                       CustomImageView(
-                        imagePath: eighteenItemModelObj?.verified1,
+                        imagePath: eighteenItemModelObj.verified1,
                         height: 18,
                         width: 18,
                         margin: const EdgeInsets.only(

@@ -10,8 +10,8 @@ import '../model/verified_institute_item_model.dart';
 part 'marketplace_state.dart';
 
 final marketplaceNotifier =
-    StateNotifierProvider<MarketplaceNotifier, MarketplaceState>(
-  (ref) => MarketplaceNotifier(MarketplaceState(
+    StateNotifierProvider<MarketplaceNotifier, MarketPlaceState>(
+  (ref) => MarketplaceNotifier(MarketPlaceState(
     selectedDropDownValue: SelectionPopupModel(title: ''),
     selectedDropDownValue1: SelectionPopupModel(title: ''),
     marketplaceModelObj: MarketplaceModel(verifiedinstituteItemList: [
@@ -132,6 +132,6 @@ final marketplaceNotifier =
 );
 
 /// A notifier that manages the state of a Marketplace according to the event that is dispatched to it.
-class MarketplaceNotifier extends StateNotifier<MarketplaceState> {
-  MarketplaceNotifier(MarketplaceState state) : super(state) {}
+class MarketplaceNotifier extends StateNotifier<MarketPlaceState> {
+  MarketplaceNotifier(MarketPlaceState state) : super(state) {}
 }

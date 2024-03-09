@@ -22,6 +22,7 @@ dependencies:
     sdk: flutter
   flutter_riverpod: ^2.4.0
   flutter_svg: ^2.0.10+1
+  google_fonts: ^6.2.0
   hive_flutter: ^1.1.0
   internet_connection_checker_plus: ^2.0.0
   intl: ^0.18.1
@@ -55,3 +56,20 @@ flutter:
     - assets/images/
 #    - assets/svgs/
 #    - assets/fonts/
+  fonts:
+#    - family: Avenir
+#      fonts:
+#        - asset: assets/fonts/AvenirLTStd-Book.otf
+#        - asset: assets/fonts/AvenirLTStd-Heavy.otf
+#        - asset: assets/fonts/AvenirLTStd-Light.otf
+#        - asset: assets/fonts/AvenirLTStd-Medium.otf
+#        - asset: assets/fonts/AvenirLTStd-Roman.otf
+    - family: Metropolis
+      fonts:
+        - asset: assets/fonts/Metropolis-Regular.otf
+        - asset: assets/fonts/Metropolis-Bold.otf
+        - asset: assets/fonts/Metropolis-ExtraBold.otf
+        - asset: assets/fonts/Metropolis-Medium.otf
+        - asset: assets/fonts/Metropolis-SemiBold.otf
+        - asset: assets/fonts/Metropolis-Light.otf
+        - asset: assets/fonts/Metropolis-Thin.otf

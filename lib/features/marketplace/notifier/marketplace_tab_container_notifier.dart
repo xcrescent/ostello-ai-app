@@ -11,7 +11,7 @@ final marketplaceTabContainerNotifier = StateNotifierProvider<
     MarketplaceTabContainerNotifier, MarketplaceTabContainerState>(
   (ref) => MarketplaceTabContainerNotifier(MarketplaceTabContainerState(
     searchController: TextEditingController(),
-    selectedDropDownValue: SelectionPopupModel(title: ''),
+    selectedDropDownValue: SelectionPopupModel(title: 'CBSE Class 10'),
     isSelectedSwitch: false,
     marketplaceTabContainerModelObj:
         MarketplaceTabContainerModel(dropdownItemList: [
@@ -36,7 +36,30 @@ final marketplaceTabContainerNotifier = StateNotifierProvider<
 class MarketplaceTabContainerNotifier
     extends StateNotifier<MarketplaceTabContainerState> {
   MarketplaceTabContainerNotifier(MarketplaceTabContainerState state)
-      : super(state) {}
+      : super(state) {
+    state = state.copyWith(
+      searchController: TextEditingController(),
+      selectedDropDownValue: SelectionPopupModel(title: 'CBSE Class 10'),
+      isSelectedSwitch: false,
+      marketplaceTabContainerModelObj: MarketplaceTabContainerModel(
+        dropdownItemList: [
+          SelectionPopupModel(
+            id: 1,
+            title: "Item One",
+            isSelected: true,
+          ),
+          SelectionPopupModel(
+            id: 2,
+            title: "Item Two",
+          ),
+          SelectionPopupModel(
+            id: 3,
+            title: "Item Three",
+          )
+        ],
+      ),
+    );
+  }
 
   void changeSwitchBox1(bool value) {
     state = state.copyWith(isSelectedSwitch: value);

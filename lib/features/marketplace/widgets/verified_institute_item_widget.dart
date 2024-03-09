@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ostello_ai_app/l10n/l10n.dart';
 
 import '../../../const/resource.dart';
 import '../../../core/theme/app_decoration.dart';
@@ -83,12 +84,12 @@ class VerifiedInstituteItemWidget extends StatelessWidget {
                                   text: TextSpan(
                                     children: [
                                       TextSpan(
-                                        text: "lbl_50_off",
+                                        text: context.l10n.lbl_50_off,
                                         style: CustomTextStyles
                                             .titleMediumffffffff,
                                       ),
                                       TextSpan(
-                                        text: "lbl_upto_2000",
+                                        text: context.l10n.lbl_upto_2000,
                                         style:
                                             CustomTextStyles.titleSmallffcbcacb,
                                       ),
@@ -113,21 +114,28 @@ class VerifiedInstituteItemWidget extends StatelessWidget {
                   horizontal: 9,
                   vertical: 3,
                 ),
-                decoration: AppDecoration.gradientCyanToBlue.copyWith(
-                  borderRadius: BorderRadiusStyle.circleBorder12,
+                decoration: BoxDecoration(
+                  color: const Color(0xff164B76),
+                  gradient: const RadialGradient(
+                    center: Alignment(0.5, 0.5),
+                    radius: 0.5,
+                    colors: [
+                      Color(0xff164B76),
+                      Color(0xff3FA0F0),
+                    ],
+                    stops: [
+                      -0.8,
+                      0.8,
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(4),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 1,
-                        bottom: 2,
-                      ),
-                      child: Text(
-                        verifiedInstituteItemModelObj.verified!,
-                        style: theme.textTheme.labelMedium,
-                      ),
+                    Text(
+                      verifiedInstituteItemModelObj.verified!,
+                      style: theme.textTheme.labelMedium,
                     ),
                     CustomImageView(
                       imagePath: R.imgUntitledDesign4,

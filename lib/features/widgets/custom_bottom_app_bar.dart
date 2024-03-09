@@ -20,19 +20,21 @@ class CustomBottomAppBarState extends State<CustomBottomAppBar> {
       icon: R.imgNavHome,
       activeIcon: R.imgNavHome,
       title: "Home",
-      type: BottomBarEnum.Home,
+      type: BottomBarEnum.home,
       isSelected: true,
     ),
     BottomMenuModel(
       icon: R.imgNavMarketplace,
       activeIcon: R.imgNavMarketplace,
       title: "Marketplace",
-      type: BottomBarEnum.Marketplace,
+      type: BottomBarEnum.marketplace,
     ),
   ];
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
+      color: Colors.white,
+      elevation: 0,
       shape: const CircularNotchedRectangle(),
       child: SizedBox(
         height: 24,
@@ -83,7 +85,7 @@ class CustomBottomAppBarState extends State<CustomBottomAppBar> {
                             color: appTheme.gray500,
                           ),
                           Padding(
-                            padding: EdgeInsets.only(top: 4),
+                            padding: const EdgeInsets.only(top: 4),
                             child: Text(
                               bottomMenuList[index].title ?? "",
                               style:
@@ -104,8 +106,8 @@ class CustomBottomAppBarState extends State<CustomBottomAppBar> {
 }
 
 enum BottomBarEnum {
-  Home,
-  Marketplace,
+  home,
+  marketplace,
 }
 
 class BottomMenuModel {
